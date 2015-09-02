@@ -1,6 +1,5 @@
 env
 output.json
-plans
 sample
 tickerData
 *.pyc

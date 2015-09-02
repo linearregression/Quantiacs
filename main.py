@@ -17,6 +17,7 @@ def randomBest(iters=4):
     if newSharpe > sharpe:
       sharpe = newSharpe
       opt = plan
+    print 'iteration:', i, 'sharpe:', sharpe
   return opt, sharpe
 
 ###############################################################################
@@ -98,7 +99,7 @@ def main():
     print 'Please specify path to trading system'
     return
 
-  RANDOM_BEST_ITERS = 4
+  RANDOM_BEST_ITERS = 16
   GENERATIONS       = 16 # 4000
   MUTATION_RATE     = 0.05
   MUTATION_AMOUNT   = 0.2
